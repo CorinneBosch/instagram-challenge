@@ -1,24 +1,133 @@
-# README
+# #Chitter API Frontend Challenge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+   ,_      _.
+  >' )    ( '<
+  ( ( \  / ) )
+   ''|\  /| ''
+```
 
-Things you may want to cover:
+## What I've learned & need to improve:
 
-* Ruby version
+Having very limited time completing this weekend challenge I wanted to focus on interacting with the return key values from the given API.
+I was unsure on how to write tests in this context and tried to TDD with good planning and sudo code instead
+Keen on implementig more userstories in the coming days
 
-* System dependencies
+## Implementation
 
-* Configuration
+Functional representation of user requirements:
 
-* Database creation
+[Check out my workflow mindmap](https://github.com/CorinneBosch/frontend-api-challenge/main/public/images/mindmap.png)
 
-* Database initialization
+## Setup
 
-* How to run the test suite
+1. **Fork** this [chitter-challenge repository](https://github.com/CorinneBosch/frontend-api-challenge/tree/main)
+2. Then clone **your** fork to your computer.
+3. Ensure you have `node` installed locally or gobally.
+4. Otherwise install node as shown below
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+brew update
+brew install node
+brew upgrade node
+```
 
-* Deployment instructions
+## How to run
 
-* ...
+To interact with Zwitscher and stay up-to date with the world...
+Open up the index file in your terminal
+
+```
+$ open index.html
+```
+
+## Run test
+
+Run Jasmine tests in browser
+
+```
+$ npx jasmine-browser-runner serve
+```
+
+Run Jasmine tests in your terminal
+
+```
+$ npx jasmine-browser-runner runSpecs
+```
+
+## The chitter-challenge is built upon the following user stories:
+
+```
+As a user
+So that I can read and judge whats going on in the world
+I would like to create a Zwitscher account
+
+As a user
+So that I can interact and participate in the social-media maddness
+I would like to login to Zwitscher
+
+As a user
+That I can share with the world my unnecessary and superficial opinions that no one really cares about
+I would like to post a peep
+
+As a user
+That I can fully indulge into the gossip & trauma that’s happening on Zwitscher
+I would like to view & read all peeps
+
+As a user
+That I can read particularly controversial peeps in full length
+I would like to view individual peeps
+
+As a user
+That I can hide immoral peeps I’ve made in the past  & pretend I am a better person now
+I would like to delete peeps
+
+As a user
+That I can advocate and hype up every mainstream peep to take sides in an argument
+I would like to be able to like peeps
+
+As a user
+To disassociate from peeps that become unpopular over time
+I would like to to be able to dislike peeps
+```
+
+Source of original Repository & README instuctions: [Makers Academy GitHub](https://github.com/makersacademy/frontend-api-challenge)
+
+## Instructions
+
+- Feel free to use Google, your notes, books, etc., but work on your own
+- If you refer to the solution of another coach or student, please put a link to that in your README
+- If you have a partial solution, **still check in a partial solution**
+- You must submit a pull request to this repo with your code by 9am Monday morning
+
+## Task
+
+Build Instagram: Simple huh!
+
+Your challenge is to build Instagram using Rails. You'll need **users** who can post **pictures**, write **comments** on pictures and **like** a picture. Style it like Instagram's website (or more awesome).
+
+Bonus if you can add filters!
+
+## How to start
+
+1. Produce some stories, break them down into tasks, and estimate
+2. Fork this repo, clone, etc
+3. Initialize a new rails project
+
+Remember to proceed in small steps! Getting confused? Make the steps even smaller.
+
+## Code Quality
+
+For linting, you can use the `.rubocop.yml` in this repository (or your own!).
+You'll need these gems:
+
+```ruby
+group :development, :test do
+  gem 'rubocop', '1.20', require: false
+  gem 'rubocop-rails'
+end
+```
+
+You can also lint Javascript, CSS, and ERB — feel free to research this. These
+will help you to train yourself to produce cleaner code — and will often alert
+you to mistakes or mishaps!
