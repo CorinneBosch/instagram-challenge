@@ -1,97 +1,71 @@
-# #Chitter API Frontend Challenge
+# MakersGram Challenge
 
 ```
-   ,_      _.
-  >' )    ( '<
-  ( ( \  / ) )
-   ''|\  /| ''
+░░▄▄░▄███▄
+▄▀▀▀▀░▄▄▄░▀▀▀▀▄
+█▒▒▒▒█░░░█▒▒▒▒█
+█▒▒▒▒▀▄▄▄▀▒▒▒▒█
+▀▄▄▄▄▄▄▄▄▄▄▄▄▄▀
 ```
 
 ## What I've learned & need to improve:
 
-Having very limited time completing this weekend challenge I wanted to focus on interacting with the return key values from the given API.
-I was unsure on how to write tests in this context and tried to TDD with good planning and sudo code instead
-Keen on implementig more userstories in the coming days
+My main goal this weekend was to upload an image file to Instagram, as I had an idea how to build everything else form my past experience with our Acebook clone project. After trying for quite a while to use AWS3 I had to give in and settle with Active Storage. I also wanted to play around with the `devise` gem which is super interesting and powerful. When restarting and dropping all my tables after my failed AWS3 attempt I have not rebuilt my `devise` user table but it was definitely worth playing around with it for a while.
+I have also implemented Bulma for some basic styling
 
 ## Implementation
 
-Functional representation of user requirements:
-
-[Check out my workflow mindmap](https://github.com/CorinneBosch/frontend-api-challenge/main/public/images/mindmap.png)
-
 ## Setup
 
-1. **Fork** this [chitter-challenge repository](https://github.com/CorinneBosch/frontend-api-challenge/tree/main)
+1. **Fork** this [instagram-repository](https://github.com/CorinneBosch/instagram-challenge)
 2. Then clone **your** fork to your computer.
-3. Ensure you have `node` installed locally or gobally.
-4. Otherwise install node as shown below
+3. Ensure you have `Ruby`, `Rails` and `rspec` installed.
+4. Run `gem install bundler` if you dont have bundler.
+5. Once installed, run `bundle`.
 
 ```
-brew update
-brew install node
-brew upgrade node
+bundle install
+rails db:create
+rails db:migrate
 ```
 
 ## How to run
 
-To interact with Zwitscher and stay up-to date with the world...
-Open up the index file in your terminal
+To interact with MakersGram and stay up-to date with the world...
+Run the command below in your terminal and navigate to `localhost:3000`
 
 ```
-$ open index.html
+$ rails server
+or
+$ rails s
 ```
 
 ## Run test
 
-Run Jasmine tests in browser
+To test specific features in your terminal.
 
 ```
-$ npx jasmine-browser-runner serve
+$ rspec test/controllers/file_name_test.rb
+$ rspec test/feature/file_name_test.rb
+$ rspec test/models/file_name_test.rb
 ```
 
-Run Jasmine tests in your terminal
+To test all units and features at once in your terminal.
 
 ```
-$ npx jasmine-browser-runner runSpecs
+$ cd instagram-challenge
+$ rspec
 ```
 
-## The chitter-challenge is built upon the following user stories:
+## The MakersGram-challenge is built upon the following user stories:
 
 ```
-As a user
-So that I can read and judge whats going on in the world
-I would like to create a Zwitscher account
-
-As a user
-So that I can interact and participate in the social-media maddness
-I would like to login to Zwitscher
-
-As a user
-That I can share with the world my unnecessary and superficial opinions that no one really cares about
-I would like to post a peep
-
-As a user
-That I can fully indulge into the gossip & trauma that’s happening on Zwitscher
-I would like to view & read all peeps
-
-As a user
-That I can read particularly controversial peeps in full length
-I would like to view individual peeps
-
-As a user
-That I can hide immoral peeps I’ve made in the past  & pretend I am a better person now
-I would like to delete peeps
-
-As a user
-That I can advocate and hype up every mainstream peep to take sides in an argument
-I would like to be able to like peeps
-
-As a user
-To disassociate from peeps that become unpopular over time
-I would like to to be able to dislike peeps
+As a User
+That I can share the my view of the world
+I would like to upload images to MakersGram
 ```
 
-Source of original Repository & README instuctions: [Makers Academy GitHub](https://github.com/makersacademy/frontend-api-challenge)
+Source of original Repository & README instuctions: [Makers Academy GitHub](https://github.com/makersacademy/instagram-challenge)
 
 ## Instructions
 

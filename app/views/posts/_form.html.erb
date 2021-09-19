@@ -12,18 +12,15 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, placeholder: 'Title'%>
   </div>
 
   <div class="field">
-    <%= form.label :image %>
-    <%= form.file_field :image %>
+    <%= form.file_field :image, placeholder: 'Choose Image' %>
   </div>
 
   <div class="field">
-    <%= form.label :caption %>
-    <%= form.text_area :caption %>
+    <%= form.text_area :caption, placeholder: 'Caption' %>
   </div>
 
   <div class="actions">
