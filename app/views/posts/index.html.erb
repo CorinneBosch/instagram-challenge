@@ -13,7 +13,7 @@
           <td><%= post.title %></td>
         </div>
         <div class='caption'>
-          <td><%= post.caption %></td>
+          <td><%= emojify(post.caption) %></td>
         </div>
         <div class='edit'>
           <td><%= link_to 'Show', post %></td>
