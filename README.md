@@ -9,14 +9,13 @@
 ```
 ______
   
-[Implementation](#Project) | [Set up](#Setup) | [DB Connection](#DB) | [Interact](#Interact) | [Run Tests](#Tests) | [User Stories](#User-Stories)
+[Set up](#Setup) | [DB Connection](#DB) | [Interact](#Interact) | [Run Tests](#Tests) | [User Stories](#User-Stories)
 
 ## What I've learned & need to improve:
 
 My main goal this weekend was to upload an image file to Instagram, as I had an idea how to build everything else form my past experience with our Acebook clone project. After trying for quite a while to use AWS3 I had to give in and settle with Active Storage. I also wanted to play around with the `devise` gem which is super interesting and powerful. When restarting and dropping all my tables after my failed AWS3 attempt I have not rebuilt my `devise` user table but it was definitely worth playing around with it for a while.
 I have also implemented Bulma for some basic styling
 
-## Set up
 ## <a name="Setup">Set up</a>
 
 1. **Fork** this [instagram-repository](https://github.com/CorinneBosch/instagram-challenge)
@@ -27,7 +26,7 @@ I have also implemented Bulma for some basic styling
 
 ## <a name="DB">Database Connection</a>
 
-Before running the application on localhost, please migrate the database.
+Before running the application on localhost, please migrate the database.\
 If you wish to seed your db you can do so with the 2nd command.
 
 ```
@@ -36,13 +35,13 @@ rails db:seed
 ```
 ## <a name="Interact">Interact with the programme</a>
 
-To interact with MakersGram and stay up-to date with the world...
+To interact with MakersGram and stay up-to date with the world...\
 Run the command below in your terminal and navigate to `localhost:3000`
 
 ```
-rails server
+$ rails server
 or
-rails s
+$ rails s
 ```
 
 ## <a name="Tests">Run test</a>
